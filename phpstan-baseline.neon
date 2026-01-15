@@ -1,0 +1,331 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Parameter \\#1 \\$serviceContainer of static method vwo\\\\Utils\\\\ImpressionUtil\\:\\:SendImpressionForVariationShown\\(\\) expects vwo\\\\Services\\\\ServiceContainer, vwo\\\\Models\\\\SettingsModel given\\.$#"
+			count: 5
+			path: src/Api/GetFlag.php
+
+		-
+			message: "#^Parameter \\#4 \\$variationId of method vwo\\\\Utils\\\\NetworkUtil\\:\\:getTrackUserPayloadData\\(\\) expects string, int given\\.$#"
+			count: 1
+			path: src/Api/GetFlag.php
+
+		-
+			message: "#^Parameter \\#5 \\$context of method vwo\\\\Utils\\\\NetworkUtil\\:\\:getTrackUserPayloadData\\(\\) expects vwo\\\\Utils\\\\ContextModel, vwo\\\\Models\\\\User\\\\ContextModel given\\.$#"
+			count: 3
+			path: src/Api/GetFlag.php
+
+		-
+			message: "#^Ternary operator condition is always true\\.$#"
+			count: 1
+			path: src/Api/GetFlag.php
+
+		-
+			message: "#^Property vwo\\\\Models\\\\MetricModel\\:\\:\\$key is never written, only read\\.$#"
+			count: 1
+			path: src/Models/MetricModel.php
+
+		-
+			message: "#^Method vwo\\\\Packages\\\\DecisionMaker\\\\DecisionMaker\\:\\:generateBucketValue\\(\\) should return int but returns float\\.$#"
+			count: 1
+			path: src/Packages/DecisionMaker/DecisionMaker.php
+
+		-
+			message: "#^Property vwo\\\\Packages\\\\Logger\\\\Core\\\\LogManager\\:\\:\\$requestId is unused\\.$#"
+			count: 1
+			path: src/Packages/Logger/Core/LogManager.php
+
+		-
+			message: "#^Method vwo\\\\Packages\\\\Logger\\\\Core\\\\LogTransportManager\\:\\:logToConsole\\(\\) invoked with 2 parameters, 1 required\\.$#"
+			count: 1
+			path: src/Packages/Logger/Core/LogTransportManager.php
+
+		-
+			message: "#^Property vwo\\\\Packages\\\\Logger\\\\Transports\\\\ConsoleTransport\\:\\:\\$level is never read, only written\\.$#"
+			count: 1
+			path: src/Packages/Logger/Transports/ConsoleTransport.php
+
+		-
+			message: "#^Property vwo\\\\Packages\\\\NetworkLayer\\\\Client\\\\NetworkClient\\:\\:\\$logManager is never read, only written\\.$#"
+			count: 1
+			path: src/Packages/NetworkLayer/Client/NetworkClient.php
+
+		-
+			message: "#^Strict comparison using \\=\\=\\= between string and false will always evaluate to false\\.$#"
+			count: 1
+			path: src/Packages/NetworkLayer/Client/NetworkClient.php
+
+		-
+			message: "#^Method vwo\\\\Packages\\\\NetworkLayer\\\\Handlers\\\\RequestHandler\\:\\:createRequest\\(\\) should return vwo\\\\Packages\\\\NetworkLayer\\\\Models\\\\RequestModel but returns null\\.$#"
+			count: 1
+			path: src/Packages/NetworkLayer/Handlers/RequestHandler.php
+
+		-
+			message: "#^Strict comparison using \\=\\=\\= between vwo\\\\Packages\\\\NetworkLayer\\\\Models\\\\RequestModel and null will always evaluate to false\\.$#"
+			count: 2
+			path: src/Packages/NetworkLayer/Manager/NetworkManager.php
+
+		-
+			message: "#^Access to an undefined property vwo\\\\Packages\\\\SegmentationEvaluator\\\\Evaluators\\\\SegmentEvaluator\\:\\:\\$settings\\.$#"
+			count: 2
+			path: src/Packages/SegmentationEvaluator/Evaluators/SegmentEvaluator.php
+
+		-
+			message: "#^Parameter \\#2 \\$queryParams of static method vwo\\\\Utils\\\\GatewayServiceUtil\\:\\:getFromGatewayService\\(\\) expects array, object\\{attribute\\: mixed, listId\\: string\\}&stdClass given\\.$#"
+			count: 1
+			path: src/Packages/SegmentationEvaluator/Evaluators/SegmentOperandEvaluator.php
+
+		-
+			message: "#^Strict comparison using \\=\\=\\= between mixed and null will always evaluate to false\\.$#"
+			count: 2
+			path: src/Packages/SegmentationEvaluator/Evaluators/SegmentOperandEvaluator.php
+
+		-
+			message: "#^Variable \\$operandType might not be defined\\.$#"
+			count: 1
+			path: src/Packages/SegmentationEvaluator/Evaluators/SegmentOperandEvaluator.php
+
+		-
+			message: "#^Function array_key_first not found\\.$#"
+			count: 1
+			path: src/Packages/SegmentationEvaluator/Utils/SegmentUtil.php
+
+		-
+			message: "#^Constructor of class vwo\\\\Services\\\\LoggerService has an unused parameter \\$config\\.$#"
+			count: 1
+			path: src/Services/LoggerService.php
+
+		-
+			message: "#^Undefined variable\\: \\$this$#"
+			count: 2
+			path: src/Services/LoggerService.php
+
+		-
+			message: "#^Access to an undefined property vwo\\\\Services\\\\SettingsService\\:\\:\\$serviceContainer\\.$#"
+			count: 2
+			path: src/Services/SettingsService.php
+
+		-
+			message: "#^Property vwo\\\\Services\\\\StorageService\\:\\:\\$storageData is never read, only written\\.$#"
+			count: 1
+			path: src/Services/StorageService.php
+
+		-
+			message: "#^Else branch is unreachable because ternary operator condition is always true\\.$#"
+			count: 2
+			path: src/Utils/AliasingUtil.php
+
+		-
+			message: "#^File ends with a trailing whitespace\\. This may cause problems when running the code in the web browser\\. Remove the closing \\?\\> mark or remove the whitespace\\.$#"
+			count: 1
+			path: src/Utils/AliasingUtil.php
+
+		-
+			message: "#^Strict comparison using \\=\\=\\= between mixed and 0 will always evaluate to false\\.$#"
+			count: 1
+			path: src/Utils/CampaignUtil.php
+
+		-
+			message: "#^Result of && is always false\\.$#"
+			count: 1
+			path: src/Utils/DataTypeUtil.php
+
+		-
+			message: "#^Strict comparison using \\=\\=\\= between class\\-string and 'Regex' will always evaluate to false\\.$#"
+			count: 1
+			path: src/Utils/DataTypeUtil.php
+
+		-
+			message: "#^Cannot call method getId\\(\\) on array\\.$#"
+			count: 4
+			path: src/Utils/DecisionUtil.php
+
+		-
+			message: "#^Cannot call method getType\\(\\) on array\\.$#"
+			count: 2
+			path: src/Utils/DecisionUtil.php
+
+		-
+			message: "#^Cannot call method getVariations\\(\\) on array\\.$#"
+			count: 3
+			path: src/Utils/DecisionUtil.php
+
+		-
+			message: "#^Parameter \\#1 \\$dsl of method vwo\\\\Packages\\\\SegmentationEvaluator\\\\Core\\\\SegmentationManager\\:\\:validateSegmentation\\(\\) expects array, object given\\.$#"
+			count: 1
+			path: src/Utils/DecisionUtil.php
+
+		-
+			message: "#^Variable \\$whitelistedVariation in empty\\(\\) always exists and is not falsy\\.$#"
+			count: 1
+			path: src/Utils/DecisionUtil.php
+
+		-
+			message: "#^PHPDoc tag @param references unknown parameter\\: \\$campaignId$#"
+			count: 1
+			path: src/Utils/ImpressionUtil.php
+
+		-
+			message: "#^PHPDoc tag @param references unknown parameter\\: \\$variationId$#"
+			count: 1
+			path: src/Utils/ImpressionUtil.php
+
+		-
+			message: "#^Property vwo\\\\Utils\\\\ImpressionUtil\\:\\:\\$accountId is unused\\.$#"
+			count: 1
+			path: src/Utils/ImpressionUtil.php
+
+		-
+			message: "#^Method vwo\\\\Utils\\\\MegUtil\\:\\:evaluateGroups\\(\\) should return array but returns vwo\\\\Models\\\\CampaignModel\\|null\\.$#"
+			count: 1
+			path: src/Utils/MegUtil.php
+
+		-
+			message: "#^PHPDoc tag @param references unknown parameter\\: \\$settings$#"
+			count: 1
+			path: src/Utils/MegUtil.php
+
+		-
+			message: "#^Parameter \\#2 \\$campaign of static method vwo\\\\Utils\\\\CampaignUtil\\:\\:getBucketingSeed\\(\\) expects vwo\\\\Models\\\\CampaignModel, null given\\.$#"
+			count: 2
+			path: src/Utils/MegUtil.php
+
+		-
+			message: "#^Call to method getCustomVariables\\(\\) on an unknown class vwo\\\\Utils\\\\ContextModel\\.$#"
+			count: 1
+			path: src/Utils/NetworkUtil.php
+
+		-
+			message: "#^Call to method getId\\(\\) on an unknown class vwo\\\\Utils\\\\ContextModel\\.$#"
+			count: 1
+			path: src/Utils/NetworkUtil.php
+
+		-
+			message: "#^Call to method getIpAddress\\(\\) on an unknown class vwo\\\\Utils\\\\ContextModel\\.$#"
+			count: 1
+			path: src/Utils/NetworkUtil.php
+
+		-
+			message: "#^Call to method getPostSegmentationVariables\\(\\) on an unknown class vwo\\\\Utils\\\\ContextModel\\.$#"
+			count: 1
+			path: src/Utils/NetworkUtil.php
+
+		-
+			message: "#^Call to method getUserAgent\\(\\) on an unknown class vwo\\\\Utils\\\\ContextModel\\.$#"
+			count: 1
+			path: src/Utils/NetworkUtil.php
+
+		-
+			message: "#^Call to method getVwo\\(\\) on an unknown class vwo\\\\Utils\\\\ContextModel\\.$#"
+			count: 3
+			path: src/Utils/NetworkUtil.php
+
+		-
+			message: "#^Else branch is unreachable because ternary operator condition is always true\\.$#"
+			count: 2
+			path: src/Utils/NetworkUtil.php
+
+		-
+			message: "#^Parameter \\#4 \\$visitorUserAgent of method vwo\\\\Utils\\\\NetworkUtil\\:\\:getEventBasePayload\\(\\) expects string, null given\\.$#"
+			count: 3
+			path: src/Utils/NetworkUtil.php
+
+		-
+			message: "#^Parameter \\#5 \\$ipAddress of method vwo\\\\Utils\\\\NetworkUtil\\:\\:getEventBasePayload\\(\\) expects string, null given\\.$#"
+			count: 3
+			path: src/Utils/NetworkUtil.php
+
+		-
+			message: "#^Parameter \\$context of method vwo\\\\Utils\\\\NetworkUtil\\:\\:getTrackUserPayloadData\\(\\) has invalid type vwo\\\\Utils\\\\ContextModel\\.$#"
+			count: 1
+			path: src/Utils/NetworkUtil.php
+
+		-
+			message: "#^Parameter \\#5 \\$context of method vwo\\\\Utils\\\\NetworkUtil\\:\\:getTrackUserPayloadData\\(\\) expects vwo\\\\Utils\\\\ContextModel, vwo\\\\Models\\\\User\\\\ContextModel given\\.$#"
+			count: 1
+			path: src/Utils/RuleEvaluationUtil.php
+
+		-
+			message: "#^Parameter \\#2 \\$visitorUserAgent of method vwo\\\\Utils\\\\NetworkUtil\\:\\:getEventsBaseProperties\\(\\) expects string, null given\\.$#"
+			count: 1
+			path: src/Utils/SdkInitAndUsageStatsUtil.php
+
+		-
+			message: "#^Parameter \\#3 \\$ipAddress of method vwo\\\\Utils\\\\NetworkUtil\\:\\:getEventsBaseProperties\\(\\) expects string, null given\\.$#"
+			count: 1
+			path: src/Utils/SdkInitAndUsageStatsUtil.php
+
+		-
+			message: "#^Static method vwo\\\\Utils\\\\FunctionUtil\\:\\:addLinkedCampaignsToSettings\\(\\) invoked with 2 parameters, 1 required\\.$#"
+			count: 1
+			path: src/Utils/SettingsUtil.php
+
+		-
+			message: "#^Static property vwo\\\\Utils\\\\UrlUtil\\:\\:\\$gatewayServiceUrl is never read, only written\\.$#"
+			count: 1
+			path: src/Utils/UrlUtil.php
+
+		-
+			message: "#^Static property vwo\\\\Utils\\\\UsageStatsUtil\\:\\:\\$instance \\(vwo\\\\Utils\\\\UsageStatsUtil\\) in isset\\(\\) is not nullable\\.$#"
+			count: 1
+			path: src/Utils/UsageStatsUtil.php
+
+		-
+			message: "#^File ends with a trailing whitespace\\. This may cause problems when running the code in the web browser\\. Remove the closing \\?\\> mark or remove the whitespace\\.$#"
+			count: 1
+			path: src/Utils/UserIdUtil.php
+
+		-
+			message: "#^Method vwo\\\\Packages\\\\Logger\\\\Core\\\\LogManager\\:\\:info\\(\\) invoked with 2 parameters, 1 required\\.$#"
+			count: 1
+			path: src/Utils/UserIdUtil.php
+
+		-
+			message: "#^Method vwo\\\\VWO\\:\\:createInstance\\(\\) never returns null so it can be removed from the return type\\.$#"
+			count: 1
+			path: src/VWO.php
+
+		-
+			message: "#^Method vwo\\\\VWO\\:\\:createInstance\\(\\) never returns vwo\\\\VWOClient so it can be removed from the return type\\.$#"
+			count: 1
+			path: src/VWO.php
+
+		-
+			message: "#^Method vwo\\\\VWO\\:\\:createInstance\\(\\) should return vwo\\\\VWOClient\\|null but returns array\\<string, mixed\\>\\.$#"
+			count: 1
+			path: src/VWO.php
+
+		-
+			message: "#^Else branch is unreachable because ternary operator condition is always true\\.$#"
+			count: 3
+			path: src/VWOBuilder.php
+
+		-
+			message: "#^PHPDoc tag @return has invalid value \\(\\{this\\} The instance of this builder\\.\\)\\: Unexpected token \"\\{\", expected type at offset 68$#"
+			count: 1
+			path: src/VWOBuilder.php
+
+		-
+			message: "#^While loop condition is always true\\.$#"
+			count: 1
+			path: src/VWOBuilder.php
+
+		-
+			message: "#^Call to function is_array\\(\\) with non\\-empty\\-string will always evaluate to false\\.$#"
+			count: 1
+			path: src/VWOClient.php
+
+		-
+			message: "#^Negated boolean expression is always false\\.$#"
+			count: 1
+			path: src/VWOClient.php
+
+		-
+			message: "#^Property vwo\\\\VWOClient\\:\\:\\$storage is never read, only written\\.$#"
+			count: 1
+			path: src/VWOClient.php
+
+		-
+			message: "#^Strict comparison using \\=\\=\\= between string and null will always evaluate to false\\.$#"
+			count: 1
+			path: src/VWOClient.php

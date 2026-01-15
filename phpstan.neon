@@ -1,0 +1,43 @@
+includes:
+    - phpstan-baseline.neon
+
+parameters:
+    # Start at level 5 for a good balance of strictness
+    # Can be increased to level 6-9 over time as issues are fixed
+    level: 5
+
+    # Paths to analyze
+    paths:
+        - src
+
+    # Excluded paths (to be fixed in future PRs)
+    excludePaths:
+        - tests
+        # These files have structural issues that need code fixes:
+        - src/Packages/Logger/Transports/ConsoleTransport.php
+        - src/Models/GatewayServiceModel.php
+
+    # PHP version to use for analysis
+    # Note: PHPStan 1.x minimum is PHP 7.1 (70100), SDK supports PHP 7.0+
+    # Analysis at 7.1 level will catch most compatibility issues
+    phpVersion: 70100
+
+    # Report unmatched ignored errors
+    reportUnmatchedIgnoredErrors: false
+
+    # Treat PHPDoc types as part of the type system
+    treatPhpDocTypesAsCertain: false
+
+    # Common ignored errors for initial adoption
+    # Remove these progressively as code quality improves
+    ignoreErrors:
+        # Allow mixed types in legacy code (can be removed later)
+        - '#Parameter .* expects .*, mixed given#'
+
+        # Allow array access on mixed (common in PHP SDKs)
+        - '#Cannot access offset .* on mixed#'
+
+
+    # Parallel processing for faster analysis
+    parallel:
+        maximumNumberOfProcesses: 4

@@ -13,9 +13,22 @@ Pull requests are the best way to propose changes to the codebase (we use [Githu
 
 1. Fork the repo and create your branch from `master`.
 2. If you've added code that should be tested, add tests.
-3. Ensure the test suite passes.
-4. Make sure your code lints.
+3. Ensure the test suite passes: `composer test`
+4. Ensure static analysis passes: `composer phpstan`
 5. Open a pull request!
+
+### Development Setup
+
+```bash
+# Install dependencies
+composer install
+
+# Run tests
+composer test
+
+# Run static analysis (also runs automatically on PRs)
+composer phpstan
+```
 
 ### Any contributions you make will be under the Apache 2.0 Software License
 
